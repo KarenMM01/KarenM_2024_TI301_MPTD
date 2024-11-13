@@ -1,7 +1,7 @@
 
 package unidad2_transporte;
 
-public abstract class ProblemasTransporteENO {
+public class ProblemasTransporteENO {
 
     private int nSuministro;
     private int nDemanda;
@@ -46,14 +46,26 @@ public abstract class ProblemasTransporteENO {
         }
     }
 
-    public void printEstado() {
-        System.out.println("** Estado **");
+//    public void printEstado() {
+//        System.out.println("** Estado **");
+//        for (int i = 0; i < estado.length; i++) {
+//            for (int j = 0; j < estado[0].length; j++) {
+//                System.out.printf("%3d ", estado [i][j]);
+//            }
+//            System.out.println();
+//        }  
+//    }
+    public StringBuilder Resultado() {
+        StringBuilder str = new StringBuilder();
         for (int i = 0; i < estado.length; i++) {
             for (int j = 0; j < estado[0].length; j++) {
-                System.out.printf("%3d ", estado [i][j]);
+             str.append(estado[i][j]).append(" ");
             }
-            System.out.println();
-        }  
+             str.append("\n");
+
+        }
+        return str;
     }
+    
 }
 

@@ -11,7 +11,7 @@ public class ENOtest extends ProblemasTransporteENO{
         NO.setD(Demanda);
         NO.setC(Costos);
         NO.resolverNO();
-        NO.printEstado();
+        //NO.printEstado();
     }
 
     public ENOtest(int nSuministro, int nDemanda) {
